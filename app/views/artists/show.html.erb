@@ -1,0 +1,14 @@
+#artists show page links to the artist's songs by title
+<h3><%= @artist.name %></h3>
+<ul>
+<% @artist.songs.each do |song| %>
+    
+    <li><%= link_to song.title, song_path(song) %></li>
+    <% end %>
+    </ul>
+
+    
+
+    
+
+
